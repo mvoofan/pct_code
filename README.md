@@ -17,5 +17,5 @@ python train.py --dataroot /yaop/raofan/3d-pix2pix-CycleGAN-master/dataset/ --ph
 python test.py
 ```
 
-##Citation 
+## Citation 
 Fan Rao, Zhuoxuan Wu, Lu Han, Bao Yang, Weidong Han, Wentao Zhu. Delayed PET Imaging Using Image Synthesis Network and Nonrigid Registration without Additional CT Scan. Medical Physics. 2022 (May not be available online now)
