@@ -163,24 +163,3 @@ for i, data in enumerate(dataset):
     bi_file = open(os.path.join(opt.results_dir,'evaled',('result%d.bin'    %    i) ), 'wb')
     bi_file.write(out.copy(order='C'))
     bi_file.close()
-
-total_image=combine_image(os.path.join(opt.results_dir,'evaled'))
-
-output_file_name=".".join(prompt_bp_list[0].split('/')[-1].split('.')[:-1])+'_HU_pix2pix.bin'
-
-ftem=open(prompt_bp_list[0],'rb')
-abc=ftem.read(20480)
-ftem.close()
-
-bi_file = open(output_file_name, 'wb')
-bi_file.write(abc)
-bi_file.write(total_image)
-bi_file.close()
-print(' %s  image  written'    %   output_file_name )
-
-
-
-    #visualizer.save_images(webpage, visuals, img_path)
-
-
-#webpage.save()
