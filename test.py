@@ -163,3 +163,5 @@ for i, data in enumerate(dataset):
     bi_file = open(os.path.join(opt.results_dir,'evaled',('result%d.bin'    %    i) ), 'wb')
     bi_file.write(out.copy(order='C'))
     bi_file.close()
+
+#end of generating patches
